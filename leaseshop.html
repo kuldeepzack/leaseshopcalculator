@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html ng-app="dateApp">
 
@@ -6,9 +5,7 @@
 <style>
     input.ng-valid {
         background-color:lightgreen;
-    } 
-    
-    </style>
+    } </style>
         
         
   <title>KULDEEP</title>
@@ -19,17 +16,15 @@
 
   <h1>Shop Duration Calculator</h1>
 
-  
-
   <label for="startDate">Start Date:</label>
-  <input type="date" id="startDate"  ng-model="startDate">
+  <input type="date" id="startDate" size="8" ng-model="startDate">
   <br><br>
 
   <label for="addMonths">tenure period (mm-dd-yyyy)</label>
-  <input type="number" id="addMonths"  ng-model="addMonths">
+  <input type="number" id="addMonths" ng-model="addMonths">
   
   <label for="addDays"></label>
-  <input type="number" id="addDays"  ng-model="addDays">
+  <input type="number" id="addDays" ng-model="addDays">
 
   <label for="addYears">:</label>
   <input type="number" id="addYears" ng-model="addYears">
@@ -39,7 +34,7 @@
 
   <h3>End date</h3>
   <input type="date" ng-model="newDate" readonly>
-  
+
   <script>
     angular.module('dateApp', [])
       .controller('DateController', ['$scope', function($scope) {
